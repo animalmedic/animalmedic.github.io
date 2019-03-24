@@ -6,22 +6,31 @@
 			</div>
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
  			<ul class="right hide-on-med-and-down">
-				<li><a href="#">ARTÍCULOS</a></li>
-				<li><a href="#">MULTIMEDIA</a></li>
-				<li><a href="#">RECOMENDACIONES</a></li>
-				<li><a href="#">CONTÁCTANOS</a></li>
+				<li><a href="/blog">ARTÍCULOS</a></li>
+				<li><a class="dropdown-trigger" href="#" data-target="dropdown1">MULTIMEDIA<i class="fa fa-caret-square-o-left"></i></a></li>
+				<li><a href="/recomendaciones">RECOMENDACIONES</a></li>
+				<li><a href="/contacto">CONTÁCTANOS</a></li>
 			</ul>
 		</div>
 	</nav>
 	<ul class="sidenav" id="mobile-demo">
-		<li><a href="#">ARTÍCULOS</a></li>
+		<li><a href="/blog">ARTÍCULOS</a></li>
 		<li><a href="#">MULTIMEDIA</a></li>
-		<li><a href="#">RECOMENDACIONES</a></li>
-		<li><a href="#">CONTÁCTANOS</a></li>
+		<li><a href="/recomendaciones">RECOMENDACIONES</a></li>
+		<li><a href="/contacto">CONTÁCTANOS</a></li>
 	</ul>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('.sidenav').sidenav();
 });
+</script>
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a href="#">PODCATS</a></li>
+		<li><a href="#">INFOGRAFÍAS</a></li>
+		<li><a href="#">ENTREVISTAS</a></li>
+		<li><a href="#">VIDEOS</a></li>
+	</ul>
+<script type="text/javascript">
+$(".dropdown-trigger").dropdown();
 </script>
 </header>
